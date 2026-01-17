@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Doom | Secure Uplink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="brand">Von Doom</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <div class="uplink-container">
+        <div class="uplink-visual">
+            <div class="uplink-bg-img" style="background-image: url('images/lab.jpg');"></div>
+            <div class="code-scroller">
+                connecting to server latveria_prime...<br>
+                handshake established...<br>
+                encrypting packets...<br>
+                verifying biometric signature...<br>
+                > access_level: PUBLIC<br>
+                > rerouting to Castle Doom sub-processor...<br>
+                scanning for malware...<br>
+                scan complete. clean.<br>
+                establishing secure channel...<br>
+                channel open.<br>
+                waiting for input...<br>
+                connecting to server latveria_prime...<br>
+                handshake established...<br>
+                encrypting packets...<br>
+                verifying biometric signature...<br>
+            </div>
+            
+            <div style="position: absolute; bottom: 20px; left: 20px; color: #fff; font-family: monospace;">
+                <span class="status-light"></span> SECURE CONNECTION
+            </div>
+        </div>
+
+        <div class="uplink-terminal">
+            <h2>AUDIENCE REQUEST</h2>
+            <p style="color: #666; margin-bottom: 3rem;">PROTOCOL V-99 // DO NOT WASTE TIME</p>
+
+            <form>
+                <div class="cmd-group">
+                    <span class="cmd-label">Identify Yourself</span>
+                    <input type="text" class="cmd-input" placeholder="> Enter Name" required>
+                </div>
+
+                <div class="cmd-group">
+                    <span class="cmd-label">Return Frequency</span>
+                    <input type="email" class="cmd-input" placeholder="> Enter Email Address" required>
+                </div>
+
+                <div class="cmd-group">
+                    <span class="cmd-label">Purpose of Transmission</span>
+                    <textarea class="cmd-input" rows="4" placeholder="> Type Message Here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">INITIATE TRANSMISSION</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Doom | Capabilities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="brand">Von Doom</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hud-container">
+        <div class="hud-bg" style="background-image: url('images/d.jpg');"></div>
+
+        <div class="hud-interface">
+            <div class="circle-cluster">
+                <div class="circle-card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/n.webp" alt="Time" class="card-img">
+                            <span class="card-label">Time</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Time Control</h3>
+                            <p>Experimental control over temporal flow and causality.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="circle-card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/art.jpg" alt="Magic" class="card-img">
+                            <span class="card-label">Dark Arts</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Mysticism (98%)</h3>
+                            <p>Mastery of arcane sciences integrated with advanced tech.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="circle-card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/robot.webp" alt="Robotics" class="card-img">
+                            <span class="card-label">Robotics</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Engineering</h3>
+                            <p>Construction of self-evolving autonomous intelligence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="circle-card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/strat.png" alt="Strategy" class="card-img">
+                            <span class="card-label">Strategy</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Strategy</h3>
+                            <p>Geopolitical planning via predictive modeling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-panel">
+                <h2>System Diagnostics</h2>
+                
+                <div class="skill-row">
+                    <div class="skill-header"><span>Dark Arts Proficiency</span> <span>98%</span></div>
+                    <div class="progress-track"><div class="progress-bar" style="width: 98%; animation-delay: 0.2s;"></div></div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-header"><span>Robotics / Engineering</span> <span>100%</span></div>
+                    <div class="progress-track"><div class="progress-bar" style="width: 100%; animation-delay: 0.4s;"></div></div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-header"><span>Time Manipulation</span> <span>ERROR</span></div>
+                    <div class="progress-track"><div class="progress-bar" style="width: 85%; background: #d4af37; animation-delay: 0.6s;"></div></div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-header"><span>Global Strategy</span> <span>100%</span></div>
+                    <div class="progress-track"><div class="progress-bar" style="width: 100%; animation-delay: 0.8s;"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
