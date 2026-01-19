@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav>
         <a href="index.html" class="brand">Von Doom</a>
         <div class="nav-links">
@@ -18,88 +19,101 @@
         </div>
     </nav>
 
-    <div class="hud-container">
-        <div class="hud-bg" style="background-image: url('images/d.jpg');"></div>
-
-        <div class="hud-interface">
-            <div class="circle-cluster">
-                <div class="circle-card" onclick="this.classList.toggle('flipped')">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="images/n.webp" alt="Time" class="card-img">
-                            <span class="card-label">Time</span>
-                        </div>
-                        <div class="card-back">
-                            <h3>Time Control</h3>
-                            <p>Experimental control over temporal flow and causality.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="circle-card" onclick="this.classList.toggle('flipped')">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="images/art.jpg" alt="Magic" class="card-img">
-                            <span class="card-label">Dark Arts</span>
-                        </div>
-                        <div class="card-back">
-                            <h3>Mysticism (98%)</h3>
-                            <p>Mastery of arcane sciences integrated with advanced tech.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="circle-card" onclick="this.classList.toggle('flipped')">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="images/robot.webp" alt="Robotics" class="card-img">
-                            <span class="card-label">Robotics</span>
-                        </div>
-                        <div class="card-back">
-                            <h3>Engineering</h3>
-                            <p>Construction of self-evolving autonomous intelligence.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="circle-card" onclick="this.classList.toggle('flipped')">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="images/strat.png" alt="Strategy" class="card-img">
-                            <span class="card-label">Strategy</span>
-                        </div>
-                        <div class="card-back">
-                            <h3>Strategy</h3>
-                            <p>Geopolitical planning via predictive modeling.</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="mainframe-wrapper">
+        
+        <div class="mainframe-nav">
+            <div class="nav-item active" onmouseover="activateSkill(0)">
+                <span class="nav-code">SYS_01 // CHRONO</span>
+                <span class="nav-label">Time Control</span>
             </div>
-
-            <div class="data-panel">
-                <h2>System Diagnostics</h2>
-                
-                <div class="skill-row">
-                    <div class="skill-header"><span>Dark Arts Proficiency</span> <span>98%</span></div>
-                    <div class="progress-track"><div class="progress-bar" style="width: 98%; animation-delay: 0.2s;"></div></div>
-                </div>
-
-                <div class="skill-row">
-                    <div class="skill-header"><span>Robotics / Engineering</span> <span>100%</span></div>
-                    <div class="progress-track"><div class="progress-bar" style="width: 100%; animation-delay: 0.4s;"></div></div>
-                </div>
-
-                <div class="skill-row">
-                    <div class="skill-header"><span>Time Manipulation</span> <span>ERROR</span></div>
-                    <div class="progress-track"><div class="progress-bar" style="width: 85%; background: #d4af37; animation-delay: 0.6s;"></div></div>
-                </div>
-
-                <div class="skill-row">
-                    <div class="skill-header"><span>Global Strategy</span> <span>100%</span></div>
-                    <div class="progress-track"><div class="progress-bar" style="width: 100%; animation-delay: 0.8s;"></div></div>
-                </div>
+            <div class="nav-item" onmouseover="activateSkill(1)">
+                <span class="nav-code">SYS_02 // ARCANE</span>
+                <span class="nav-label">Dark Arts</span>
+            </div>
+            <div class="nav-item" onmouseover="activateSkill(2)">
+                <span class="nav-code">SYS_03 // MECH</span>
+                <span class="nav-label">Robotics</span>
+            </div>
+            <div class="nav-item" onmouseover="activateSkill(3)">
+                <span class="nav-code">SYS_04 // TACTIC</span>
+                <span class="nav-label">Strategy</span>
             </div>
         </div>
+
+        <div class="mainframe-screen">
+            
+            <div class="skill-slide active">
+                <div class="slide-bg" style="background-image: url('images/n.webp');"></div>
+                <div class="slide-info">
+                    <h2 class="slide-title">Time Manipulation</h2>
+                    <div class="slide-stat-bar"><div class="slide-stat-fill" style="--w: 85%; background: #d4af37;"></div></div>
+                    <p class="slide-desc">
+                        Advanced temporal mechanics allowing for the observation and alteration of timelines. Status: Experimental / High Risk.
+                    </p>
+                </div>
+            </div>
+
+            <div class="skill-slide">
+                <div class="slide-bg" style="background-image: url('images/art.jpg');"></div>
+                <div class="slide-info">
+                    <h2 class="slide-title">Dark Arts Mastery</h2>
+                    <div class="slide-stat-bar"><div class="slide-stat-fill" style="--w: 98%;"></div></div>
+                    <p class="slide-desc">
+                        Knowledge rivaling the Sorcerer Supreme. Capabilities include dimensional travel, energy projection, and demonic summoning.
+                    </p>
+                </div>
+            </div>
+
+            <div class="skill-slide">
+                <div class="slide-bg" style="background-image: url('images/robot.webp');"></div>
+                <div class="slide-info">
+                    <h2 class="slide-title">Advanced Robotics</h2>
+                    <div class="slide-stat-bar"><div class="slide-stat-fill" style="--w: 100%;"></div></div>
+                    <p class="slide-desc">
+                        Design and mass production of the Doombot Legion. Fully autonomous AI systems with vibranium-reinforced chassis.
+                    </p>
+                </div>
+            </div>
+
+            <div class="skill-slide">
+                <div class="slide-bg" style="background-image: url('images/strat.png');"></div>
+                <div class="slide-info">
+                    <h2 class="slide-title">Global Strategy</h2>
+                    <div class="slide-stat-bar"><div class="slide-stat-fill" style="--w: 100%;"></div></div>
+                    <p class="slide-desc">
+                        Unrivaled geopolitical intellect. Every outcome is calculated. Doom does not guess; Doom knows.
+                    </p>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+    <script>
+        function activateSkill(index) {
+            
+            const items = document.querySelectorAll('.nav-item');
+            const slides = document.querySelectorAll('.skill-slide');
+
+           
+            items.forEach(el => el.classList.remove('active'));
+            slides.forEach(el => el.classList.remove('active'));
+
+            
+            items[index].classList.add('active');
+            slides[index].classList.add('active');
+        }
+        
+      
+        document.addEventListener('mousemove', function(e) {
+            const particle = document.createElement('div');
+            particle.classList.add('cursor-particle');
+            particle.style.left = e.clientX + 'px';
+            particle.style.top = e.clientY + 'px';
+            document.body.appendChild(particle);
+            setTimeout(() => { particle.remove(); }, 1000);
+        });
+    </script>
+
 </body>
 </html>
